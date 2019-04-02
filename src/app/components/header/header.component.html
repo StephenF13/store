@@ -1,3 +1,32 @@
-<p>
-  header works!
-</p>
+<nav class="navbar">
+    <div class="navbar-brand">
+
+
+        <a role="button" class="navbar-burger burger nav-toggle" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasicExample" (click)="menu.open()">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+
+        <app-logo></app-logo>
+
+
+    </div>
+
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+            </a>
+
+        </div>
+
+
+        <div class="navbar-end">
+            <a class="navbar-item" (click)="showSearch()">
+                <i class="fa fa-search"></i>
+            </a>
+            <app-cartbar></app-cartbar>
+        </div>
+    </div>
+</nav>
