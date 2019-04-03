@@ -20,6 +20,7 @@ import {CartService} from './providers/cart.service';
 import {MenuService} from './providers/menu.service';
 import {ProductsService} from './providers/products.service';
 import {FormsModule} from '@angular/forms';
+import {StorageService} from './providers/storage.service';
 
 @NgModule({
     declarations: [
@@ -43,7 +44,7 @@ import {FormsModule} from '@angular/forms';
         AppRoutingModule,
         FormsModule
     ],
-    providers: [CartService, MenuService, ProductsService],
+    providers: [CartService, MenuService, ProductsService, StorageService],
     bootstrap: [AppComponent]
 })
 export class AppModule {

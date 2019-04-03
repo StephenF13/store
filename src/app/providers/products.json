@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Adibou",
+    "year": 1990,
+    "price": 9.90,
+    "type": "educational",
+    "image": "adibou.png",
+    "description": "Adibou : best game !"
+  },
+  {
+    "id": 2,
+    "name": "Crash Bandicoot",
+    "year": 1992,
+    "price": 9.90,
+    "type": "platform game",
+    "image": "crash.png",
+    "description": "Crash Bandicoot is a good game "
+  },
+  {
+    "id": 3,
+    "name": "Final Fantasy VII",
+    "year": 1992,
+    "price": 9.90,
+    "type": "RPG",
+    "image": "final.png",
+    "description": "Final Fantasy VII, developed by Square for the PlayStation console. It is the seventh main installment in the Final Fantasy series."
+  },
+  {
+    "id": 4,
+    "name": "Golden Eye",
+    "year": 1990,
+    "price": 9.90,
+    "type": "FPS",
+    "image": "golden.png",
+    "description": "GoldenEye is a first-person shooter video game developed by Rare and based on the 1995 James Bond film GoldenEye."
+  },
+  {
+    "id": 5,
+    "name": "Mario",
+    "year": 1990,
+    "price": 9.90,
+    "type": "platform game",
+    "image": "mario.png",
+    "description": "Game created by Nintendo featuring their mascot, Mario."
+  },
+  {
+    "id": 6,
+    "name": "Perfect Dark",
+    "year": 1990,
+    "price": 9.90,
+    "type": "FPS",
+    "image": "perfect.png",
+    "description": " Developed by Rare and released for the Nintendo 64 video game console"
+  }
+]
