@@ -8,6 +8,6 @@ import {StorageService} from './providers/storage.service';
 })
 export class AppComponent {
     constructor(public storage: StorageService) {
-        // storage.setDrive('local'); // local (storage) ou session (storage)
+        storage.setDrive('local'); // local (storage) ou session (storage)
     }
 }
