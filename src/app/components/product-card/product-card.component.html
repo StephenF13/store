@@ -17,7 +17,7 @@
     </div>
 
     <div class="content" *ngIf="view==true">
-      <small class="year">Année: {{ product.year }}</small>
+      <small class="year">Year: {{ product.year }}</small>
       <br />
       <div [innerHTML]="product.description"> </div>
     </div>
@@ -28,7 +28,7 @@
       <span class="icon">
         <i class="fa fa-bolt"></i>
       </span>
-      <small>{{ product.type }} · {{ product.price |  currency:'BRL':true }}</small>
+      <small>{{ product.type }} · {{  product.price | number : '.2-2' }} €</small>
     </div>
     <a class="card-footer-item" [routerLink]="product.router" *ngIf="view==false">
       <span class="icon">

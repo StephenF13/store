@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CartService} from '../../providers/cart.service';
 
 @Component({
-  selector: 'app-cartbar',
-  templateUrl: './cartbar.component.html',
-  styleUrls: ['./cartbar.component.sass']
+    selector: 'app-cartbar',
+    templateUrl: './cartbar.component.html',
+    styleUrls: ['./cartbar.component.sass']
 })
 export class CartbarComponent implements OnInit {
 
-  constructor() { }
+    constructor(public cart: CartService) {
 
-  ngOnInit() {
-  }
+    }
+
+    ngOnInit() {
+
+    }
+
+    clear() {
+        console.info('clear cart...');
+        this.cart.clear();
+    }
 
 }
