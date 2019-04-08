@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import * as $ from 'jquery';
 import {MenuService} from '../../providers/menu.service';
@@ -10,17 +10,11 @@ import {MenuService} from '../../providers/menu.service';
 })
 export class HeaderComponent implements OnInit {
     modal: boolean = false;
-    constructor(public menu: MenuService) { }
+
+    constructor(public menu: MenuService) {
+    }
 
     ngOnInit() {
-        document.addEventListener('scroll', (e) => {
-            if (document.body.scrollTop > 65) {
-                $('app-header nav').addClass('fixed');
-            } else {
-                $('app-header nav').removeClass('fixed');
-            }
-            this.menu.fix();
-        }, true);
     }
 
     hideSearch() {

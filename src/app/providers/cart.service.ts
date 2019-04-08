@@ -11,6 +11,7 @@ export class CartService {
         product: {}
     };
 
+
     items: any[] = [];
 
     constructor(public storage: StorageService) {
@@ -20,6 +21,7 @@ export class CartService {
     // ajouter un item au panier
     add(item: any = {}) {
         return new Promise((resolve, reject) => {
+
             if (!item.id) {
                 reject('add an item !');
             } else {

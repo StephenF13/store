@@ -31,12 +31,4 @@ export class MenuService {
         this.opened = false;
     }
 
-    fix() {
-        if (document.body.scrollTop > 65) {
-            $('section.outer').addClass('margin-fix');
-        } else {
-            $('section.outer').removeClass('margin-fix');
-        }
-    }
-
 }
